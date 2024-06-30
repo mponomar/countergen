@@ -1,6 +1,6 @@
 # Generator for counter boxes
 
-This uses OpenSCAD to generate counter boxes for board games/wargames, 
+This uses OpenSCAD to generate counter boxes for board games/wargames with
 lots of small fiddly square tokens/counters/chits.
 
 Example:
