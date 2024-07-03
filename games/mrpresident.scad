@@ -2,7 +2,7 @@ include <../lib_counter_trays.scad>
 
 ArrangeCounterBox(14) {
     // Conflicts
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             5,  // [*] War
             6,  // [*] Conflict Type
             15, // [*] Conflict Status
@@ -14,7 +14,7 @@ ArrangeCounterBox(14) {
             20, // [*] Allies at war (20?)
     ], "Conflicts");
     // US Forces
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             6,  // [*] USAF
             6,  // [*] Carrier
             5,  // [*] Army Lt
@@ -26,7 +26,7 @@ ArrangeCounterBox(14) {
             16, // [*] Military Footprint
     ], "US Forces");
     // Opponents
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             3,  // [*] DARPA
             7,  // [*] US Strategic Capabilities
             7,  // [*] China Strategic Capabilities
@@ -42,7 +42,7 @@ ArrangeCounterBox(14) {
             2,  // [*] Iran/NK Can't increase this turn
     ], "World Opponents");
     // World Status
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             4,  // [*] Trade Agreements
             1,  // [*] Economic Trend
             4,  // [*] Ally Groups
@@ -57,7 +57,7 @@ ArrangeCounterBox(14) {
             8,  // [*] Pro/Anti US
             1,  // [*] EU SOE
     ], "International");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             8,  // [*] Bill Passed
             2,  // [*] Legislative Random (No New Legislation This Turn, Impeachment Proceedings) 
             16, // [*] Bills
@@ -72,19 +72,19 @@ ArrangeCounterBox(14) {
             1,  // [*] Campaign Promise
             5,  // [*] Scandals
     ], "Politics");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             1,  // [*] UN Speech
             6,  // [*] UN Sanctions
             12, // [*] UN Goodwill
             8,  // [*] UN Troops
     ], "UN");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             6,  // [*] Rogue State 1/2
             2,  // [*] Rogue State 3/4
             32, // [*] Terror Group 1/2
             8,  // [*] Terror Group 3/4
     ], "Enemies");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             24, // [*] Numbers
             10, // [*] +- AP
             6,  // [*] Game State (Public Approval, State of Economy, National Security, Media Relations, Relations w/Congress, World Opinion)
@@ -93,14 +93,14 @@ ArrangeCounterBox(14) {
             1,  // [*] Nobel Prize
             5,  // [*] Legacy 1x, Legacy 10x, Prestige, AP+10, AP+20
     ], "Game State");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             3,  // [*] Must Choose Intel
             1,  // [*] No Joint Action
             1,  // [*] Intel Rolls -1 DRM
             9,  // [*] Ally relations
             2,  // [*] +2 DRM to Espionage
     ], "Allies");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             12, // [*] Legislative Friends
             12, // [*] Legislative Opponents
             1,  // [*] Economic Trend
@@ -108,7 +108,7 @@ ArrangeCounterBox(14) {
             16, // [*] Cabinet Candidates
             2,  // [*] LDI, Domestic Crisis
     ], "Domestic");
-    CounterBox(14, 2, [
+    CounterBox(15.5, 2, [
             56,  // [*] Tensions
             24,  // [*] Crisis Chits
     ], "Tensions");
