@@ -69,6 +69,8 @@ and are all optional, with default values.
 |   slack       |  Extra padding added to a few places to account for some things not being physically perfect. Defaults to 0.8mm.
 |   gap         | How much room to leave between the boxes and the covers objects on the print plate.
 |   tolerance   | How much extra space to leave between the box and the cover to allow them to friction fit.  This is probably what needs to most tuning between different printers/etc.  Defaults to 0.1mm.  Adjust down if the fit is too loose and the box keeps falling out. Adjust up if the fit is too tight and the box doesn't fit.
+|    tokheight  | If specified, makes a rectangular token, with this height. Otherwise you get a toksize x toksize square. |
+
 
 ArrangeCounterBox is a convenience module to arrange multiple boxes on
 the same print plate.  Usage is optional. It takes the token size as

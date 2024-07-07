@@ -33,6 +33,8 @@
                        printers/etc.  Defaults to 0.1mm.  Adjust down if the
                        fit is too loose and the box keeps falling out. Adjust
                        up if the fit is too tight and the box doesn't fit.
+         tokheight     If specified, makes a rectangular token, with this height.
+                       Otherwise you get a toksize x toksize square.
 
      ArrangeCounterBox is a convenience module to arrange multiple boxes on
      the same print plate.  Usage is optional. It takes the token size as
@@ -51,9 +53,10 @@ ArrangeCounterBox(14) {
 }
  */
 
-module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1) {
+module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
+    theight = tokheight == 0 ? toksize : tokheight;
 
     intwall = intwallthick ? intwallthick :  wallthick;
 
@@ -62,17 +65,24 @@ module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthi
     nsec = len(sections);
 
     length = wallthick*2 + ntok*tokthick + nsec * slack + (nsec-1)*intwall;
-    width = wallthick*2 + toksize + slack;
+    width = wallthick*2 + theight + slack;
     height = wallthick + toksize + slack;
     partheight = wallthick + toksize * (2/3);
 
 
     // box
     difference()  {
-    cube([length, width, partheight]);
+        cube([length, width, partheight]);
         translate([wallthick, wallthick, wallthick]) {
             cube([length-2*wallthick, width-2*wallthick, height]);
 
+        }
+        translate([length/2, width/2, 0]) {
+            linear_extrude(wallthick/3) {
+                rotate([180, 0, 0]) {
+                    text(label, size=8, halign="center", valign="center");
+                }
+            }
         }
     }
 
@@ -82,11 +92,11 @@ module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthi
             off=sum1(offs, i) - wallthick;
 
             translate([off, 0, 0]) {
-                cube([intwall, toksize+slack, partheight-wallthick]);
+                cube([intwall, theight+slack, partheight-wallthick]);
             }
         }
     }
-
+    
     // case
     caselen=length+wallthick;
     translate([-(width+gap), 0, caselen]) {
