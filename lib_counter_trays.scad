@@ -35,6 +35,7 @@
                        up if the fit is too tight and the box doesn't fit.
          tokheight     If specified, makes a rectangular token, with this height.
                        Otherwise you get a toksize x toksize square.
+         fontsize      Font size for label.
 
      ArrangeCounterBox is a convenience module to arrange multiple boxes on
      the same print plate.  Usage is optional. It takes the token size as
@@ -53,9 +54,10 @@ ArrangeCounterBox(14) {
 }
  */
 
-module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0) {
+module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0, fontsize=0, extraheadroom=1) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
+    fsize = fontsize ? fontsize : 8;
     theight = tokheight == 0 ? toksize : tokheight;
 
     intwall = intwallthick ? intwallthick :  wallthick;
@@ -80,7 +82,7 @@ module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthi
         translate([length/2, width/2, 0]) {
             linear_extrude(wallthick/3) {
                 rotate([180, 0, 0]) {
-                    text(label, size=8, halign="center", valign="center");
+                    text(label, size=fsize, halign="center", valign="center");
                 }
             }
         }
@@ -99,17 +101,17 @@ module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthi
     
     // case
     caselen=length+wallthick;
-    translate([-(width+gap), 0, caselen]) {
+    translate([- (height + 2*wallthick + tolerance + extraheadroom) - gap, 0, caselen]) {
         rotate([0, 90, 0]) {
             difference() {
-                cube([caselen, width+wallthick*2, height+wallthick*2]);
+                cube([caselen, width+wallthick*2, height+wallthick*2+extraheadroom]);
                 translate([-1, wallthick-tolerance/2, wallthick-tolerance/2]) {
-                    cube([caselen, width+tolerance, height+tolerance]);
+                    cube([caselen, width+tolerance, height+tolerance+extraheadroom]);
                 }
                 if (len(label) > 0) {
-                    translate([caselen/2, width/2, height+wallthick+slack]) {
+                    translate([caselen/2, width/2, height+wallthick+slack+extraheadroom]) {
                         linear_extrude(slack*2) {
-                            text(label, size=8, halign="center", valign="center");
+                            text(label, size=fsize, halign="center", valign="center");
                         }
                     }
                 }
