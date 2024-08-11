@@ -1,1 +1,4 @@
-build/*.stl
+build/
+.venv/
+.idea/
+.DS_Store

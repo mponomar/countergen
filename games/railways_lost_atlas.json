@@ -1,0 +1,52 @@
+[
+    /*
+    { "type": "HexBox", "size": 51, "thick": 2.0, 
+        "counters": 
+        [ 
+            13, 14, 6, 7, 7, 5, 1, 1, 1
+        ], "label": "Yellow" 
+    },
+    { "type": "HexBox", "size": 51, "thick": 2.0, 
+        "counters": 
+        [ 
+            1, 2, 4, 4, 4, 4, 5, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
+        ], "label": "Green" 
+    },
+
+    { "type": "HexBox", "size": 51, "thick": 2.0, 
+        "counters": 
+        [ 
+            1, 2, 2, 2, 6, 2, 1, 1, 1, 2, 2, 2, 1, 1, 1, 3, 1, 1
+        ], "label": "Purple/Gray" 
+    },
+
+    { "type": "HexBox", "size": 51, "thick": 2.0, 
+        "counters": 
+        [ 
+            3, 5, 2, 5, 2, 2, 1
+        ], "label": "Special" 
+    },
+
+    {
+        "size": 67, "height":44, "thick":0.45, "skipcase": true,
+        "counters": [80, 75, 75, 35, 10, 7 ], "label":"Money"
+    },
+
+    {
+        "size": 67, "height":44, "thick":0.45, "skipcase": true,
+        "counters": [ 7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7  ], "label":"Minors"
+    },
+    */
+
+    {
+        "size": 67, "height":44, "thick":0.45, "skipcase": false,
+        "counters": [ 9, 9, 9, 9, 9, 9, 9, 9, 9  ], "label":"Majors"
+    },
+
+    /*
+    {
+        "size": 67, "height":44, "thick":0.45, "skipcase": true,
+        "counters": [ 7, 6, 4, 3, 2, 7, 4 ], "label":"Trains"
+    }
+    */
+]

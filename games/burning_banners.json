@@ -1,0 +1,100 @@
+[
+    { "size": 17, "thick": 2.2, "counters": [ 
+        54, // Regular
+        6,  // Mountains,
+        7   // Woods 
+      ], "label": "Razed" },
+
+    { "size": 17, "thick": 2.2, "counters": [ 3,3,3,3,3,3 ], "label": "Monsters" },
+
+    { "size": 17, "thick": 2.2, "counters": [ 
+        8,  // Abandoned
+        12, // Orcs Control
+        12, // Goblins Control
+        10, // Army of Night Control
+        10, // Empire Control
+        10, // Fjordland Control
+        10, // Oathboarn Control
+        4,  // Income
+        1   // Revolt 
+      ], "label": "Control" },
+
+    { "size": 26, "thick": 2.2, "counters": [ 
+        6,  // Kingdom
+        1,  // Season
+        1,  // Campaign End
+        7,  // Book
+        7,  // Sea Monsters
+        30  // Land Monsters
+      ], "label": "Control" },
+
+    // Factions
+    { "size": 26, "thick": 2.2, "counters": [ 
+        8,  // Goblin Warriors
+        4,  // Goblin Sneaks
+        5,  // Goblin Elites
+        3,  // Hobgoblins
+        3,  // Plague Flies
+        2,  // Hill Troll
+        1,  // Mountain Troll
+        1,  // Siege Engine
+        7   // Hero
+      ], "label": "Goblins" },
+
+    { "size": 26, "thick": 2.2, "counters": [ 
+        10, // Orc Reavers
+        5,  // Orc Scouts
+        3,  // Wolf Riders
+        3,  // Black Axes
+        2,  // Ogre
+        2,  // Dire Raven
+        1,  // Siege Engine
+        6   // Hero
+      ], "label": "Orcs" },
+
+    { "size": 26, "thick": 2.2, "counters": [ 
+        5,  // Swarm of Rats
+        3,  // Wolf Pack
+        3,  // Giant Bats
+        2,  // Vengeful Ghost
+        4,  // Ghouls
+        3,  // Emissaries
+        2,  // Vampire Knights
+        1,  // Siege Engine
+        6,  // Hero
+        3   // Enslaved Hero
+      ], "label": "Army of Night" },
+
+    { "size": 26, "thick": 2.2, "counters": [ 
+        7,  // Akritoi
+        4,  // Psiloi
+        5,  // Kontari
+        4,  // Korsari
+        1,  // Varyags
+        2,  // Cataphracts
+        1,  // Siege Engine
+        6   // Hero
+      ], "label": "Empire" },
+
+    { "size": 26, "thick": 2.2, "counters": [ 
+        7,  // Freeholders
+        4,  // Sea Reavers
+        3,  // Rangers
+        2,  // Valkyries
+        2,  // Berserkir
+        1,  // Drakken
+        1,  // Siege Engine
+        7   // Hero
+      ], "label": "Fjordland" },
+    { "size": 26, "thick": 2.2, "counters": [ 
+        9,  // Miners
+        5,  // King's Crossbows
+        6,  // Iron Legion
+        2,  // Dragon Slayers
+        2,  // Oath Takers
+        1,  // Storm Giant
+        1,  // Lost City of Khazud
+        1,  // Siege Engine
+        6   // Hero
+      ], "label": "Oathborn" },
+]

@@ -1,0 +1,64 @@
+[
+    { "type": "HexBox", "size": 27, "thick": 2.2, "counters": [
+        41, // straight 9
+    ], "label": "Yellow 1" },
+    { "type": "HexBox", "size": 27, "thick": 2.2, "counters": [
+        41, // gentle 8
+    ], "label": "Yellow 2" },
+    { "type": "HexBox", "size": 27, "thick": 2.2, "counters": [
+        6,  // sharp 7
+        16, // straight + dit 4
+        16, // gentle + dit 58
+        8,  // sharp + dit 3
+        2,  // 2 city 235
+        1,  // ferry IF1
+        1,  // ferry IF2
+        3,  // straight city 57
+        3,  // gentle city 6
+        3,  // sharp city 5
+        2,  // IND2
+        2,  // IND3
+        2,  // IND4
+        2,  // IND5
+        2,  // IND6
+    ], "label": "Yellow 3" },
+    { "type": "HexBox", "size": 27, "thick": 2.2, "counters": [
+        4,  // 80
+        4,  // 81
+        4,  // 82
+        4,  // 83
+        3,  // 141
+        3,  // 142
+        3,  // 143
+        3,  // 144
+        2,  // 619
+        2,  // 14
+        2,  // 15
+        2,  // 59
+        2,  // 205
+        2,  // 206
+        2,  // 12
+        2,  // 13
+    ], "label": "Green" },
+    { "type": "HexBox", "size": 27, "thick": 2.2, "counters": [
+        2,  // 544
+        2,  // 545
+        2,  // 546
+        2,  // 145
+        2,  // 146
+        2,  // 147
+        6,  // 611
+        1,  // IND1
+        1,  // IND2
+        1,  // IND3
+        1,  // IND4
+        1,  // IND5
+        1,  // IND6
+    ], "label": "Brown" },
+    { "type": "HexBox", "size": 27, "thick": 2.2, "counters": [
+        1,  // 60
+        1,  // GT6
+        4,  // 513
+        2,  // IND1
+    ], "label": "Gray" }
+]
