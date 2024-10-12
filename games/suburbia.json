@@ -1,0 +1,14 @@
+[
+  { "type": "HexBox", "size": 46, "thick": 2.0,  "counters": [
+    32
+  ], "label": "A" },
+  { "type": "HexBox", "size": 46, "thick": 2.0,  "counters": [
+    36
+  ], "label": "B" },
+  { "type": "HexBox", "size": 46, "thick": 2.0,  "counters": [
+    32,1
+  ], "label": "C" },
+  { "type": "HexBox", "size": 46, "thick": 2.0,  "counters": [
+    8,8,8
+  ], "label": "Free" }
+]

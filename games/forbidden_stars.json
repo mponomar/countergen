@@ -1,0 +1,10 @@
+[
+  { "size": 27, "thick": 2.5,  "counters": [
+    10, 10, 10, 10
+  ], "label": "Buildings" },
+
+  { "size": 89, "height": 64, "thick": 0.4,  "counters": [
+    8, 5, 10, 18
+  ], "label": "Buildings", "cards": true
+  }
+]

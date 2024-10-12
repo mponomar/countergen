@@ -10,8 +10,10 @@ import subprocess
 DOTS_PER_INCH = 72
 slack = 0.8
 
+
 def mm_to_pt(n):
-    return n/25.4 * DOTS_PER_INCH;
+    return n/25.4 * DOTS_PER_INCH
+
 
 class CounterBox:
     def __init__(self, boxtype, size, thick, counters, label):
@@ -21,6 +23,7 @@ class CounterBox:
         self.boxtype = boxtype
         self.height = 0
         self.skipcase = False
+        self.cards = False
         w = 0
         for c in range(0, len(self.counters)):
             w += self.counters[c] * self.thick
@@ -56,30 +59,33 @@ class CounterBox:
         context.restore()
 
 
-def write_scad(file, counters, out):
+def write_scad(counters, out):
     maxsize = 0
     for counter in counters:
         if counter.size > maxsize:
             maxsize = counter.size
 
     with open(out + ".scad", "w") as f:
-        f.write("include <../lib_counter_trays.scad>\n\n");
-        f.write("ArrangeCounterBox(%d) {\n" % (maxsize));
+        f.write("include <../lib_counter_trays.scad>\n\n")
+        f.write("ArrangeCounterBox(%d) {\n" % (maxsize,))
 
         for counter in counters:
             f.write("  %s(%f, %f, [" % (counter.boxtype, counter.size, counter.thick))
             for i in counter.counters:
-                f.write("%d, " % (i))
-            f.write("], \"%s\"" % (counter.label))
+                f.write("%d, " % (i,))
+            f.write("], \"%s\"" % (counter.label,))
             # optionals
             if counter.height > 0:
                 f.write(f", tokheight={counter.height}")
             if counter.skipcase > 0:
                 f.write(f", skipcase=1")
-            f.write(");\n");
-        f.write("}\n");
+            if counter.cards:
+                f.write(f", cards=true")
+            f.write(");\n")
+        f.write("}\n")
 
-def write_pdf(file, counters, out):
+
+def write_pdf(counters, out):
     with cairo.PDFSurface(out + ".pdf", DOTS_PER_INCH * 8.5, DOTS_PER_INCH * 11) as surface:
         ctx = cairo.Context(surface)
         ctx.set_line_width(0.2)
@@ -93,47 +99,51 @@ def write_pdf(file, counters, out):
                 off = 25.4
                 surface.show_page()
 
-def process_file(file, args):
+
+def process_file(filename, options):
     counters = []
-    if args.out == None:
-        out=os.path.dirname(file)
+    if options.out is None:
+        out = os.path.dirname(filename)
     else:
-        out=args.out[0]
+        out = options.out[0]
         if not os.path.exists(out):
             os.mkdir(out)
-    out=os.path.join(out, re.sub(".json$", "", os.path.basename(file)))
-    with open(file) as f:
-        obj = json5.load(f);
+    out = os.path.join(out, re.sub(".json$", "", os.path.basename(filename)))
+    with open(filename) as f:
+        obj = json5.load(f)
 
     if not isinstance(obj, list):
-        raise ValueError("Expected list of counter definitions in " + file)
+        raise ValueError("Expected list of counter definitions in " + filename)
 
     for counter in obj:
         for required in ["size", "thick", "counters", "label"]:
             if required not in counter:
-                raise ValueError("Missing field %s in counter definition" % (required))
+                raise ValueError("Missing field %s in counter definition" % (required,))
         if "type" not in counter:
-            boxtype="CounterBox"
+            boxtype = "CounterBox"
         else:
-            boxtype=counter["type"]
-        if args.skiptext:
-            label=""
+            boxtype = counter["type"]
+        if options.skiptext:
+            label = ""
         else:
             label = counter["label"]
         box = CounterBox(boxtype, counter["size"], counter["thick"], counter["counters"], label)
         # optional properties
         if "height" in counter:
             box.height = counter["height"]
-        if "skipcase" in counter and counter["skipcase"] == True:
+        if "skipcase" in counter and counter["skipcase"] is True:
             box.skipcase = True
+        if "cards" in counter and counter["cards"] is True:
+            box.cards = True
 
         counters.append(box)
 
-    write_scad(file, counters, out)
-    write_pdf(file, counters, out)
-    if args.stl:
+    write_scad(counters, out)
+    write_pdf(counters, out)
+    if options.stl:
         print("processing %s" % (out+".scad"))
-        subprocess.run(["openscad", "-o", out+".stl", out+".scad" ])
+        subprocess.run(["openscad", "-o", out+".stl", out+".scad"])
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Generate counter boxes from json description.')

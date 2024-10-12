@@ -103,11 +103,12 @@ module HexBox(toksize, tokthick, sections, label, wallthick=1, slack=0.8, tolera
     }
 }
 
-module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0, fontsize=0, extraheadroom=1, skipcase=0) {
+module CounterBox(toksize, tokthick, sections, label, wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0, fontsize=0, extraheadroom=1, skipcase=0, cards=0) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
     fsize = fontsize ? fontsize : 8;
     theight = tokheight == 0 ? toksize : tokheight;
+    docards = cards == 0 ? false : true;
 
     intwall = intwallthick ? intwallthick :  wallthick;
 
@@ -142,7 +143,18 @@ module CounterBox(toksize, tokthick, sections, label="", wallthick=1, intwallthi
             off=sum1(offs, i) - wallthick;
 
             translate([off, 0, 0]) {
-                cube([intwall, width-2*wallthick, partheight-wallthick]);
+                difference() {
+                    cube([intwall, width - 2 * wallthick, partheight - wallthick]);
+                    if (cards) {
+                        translate([-1, width / 2, partheight]) {
+                            rotate([0, 90, 0]) {
+                                linear_extrude(wallthick + 2) {
+                                    circle(width / 3);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

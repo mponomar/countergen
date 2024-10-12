@@ -1,0 +1,21 @@
+[
+  {
+    "size": 21,
+    "thick": 2.4,
+    "counters": [
+      1, // year
+      4, // points
+      6, // game state
+      1, // limits of glory
+      2, // glory+1
+      5, // glory+2
+      4, // bloody result
+      4, // admin
+      3, // sons
+      1, // +1 diplomacy
+      4, // +1 politics
+      5  // countries
+    ],
+    "label": ""
+  }
+]

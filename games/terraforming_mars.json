@@ -1,0 +1,44 @@
+[
+  { "type": "HexBox", "size": 34, "thick": 2.0,
+    "counters":
+    [
+      30, 30, 9, 12
+    ], "label": "Cities"
+  },
+  {
+    "size": 45, "height": 26, "thick": 2.0,
+    "counters": [ 40, 40 ], "label": "Awards"
+  },
+  {
+    "size": 91, "height": 64, thick: 0.305, "cards": true, "skipcase": true,
+    "counters": [
+      // research
+      137,  // base
+      71,   // corporate era
+      49,   // venus
+      7,    // prelude
+      49,   // colonies
+      17,   // turmoil
+      61,   // promo
+      12,   // game aids
+
+      // corporation
+      40,
+
+      // colonies
+      11,
+
+      // global
+      36,
+
+      // prelude
+      51,   // prelude + prelude2
+      14,   // missing expansions
+
+      // bot
+      8,    // game aids
+      32,   // bot bonus
+      44    // corporations
+    ], "label": "Cards"
+  }
+]

@@ -1,0 +1,15 @@
+[
+    { "type": "HexBox", "size": 40, "thick": 2, "counters": [
+        2, 2, 4, 1, 1, 1, 1, 1,   // yellow
+        2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,    // green
+        2, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 
+    ], "label": "Tiles" },
+
+    { "size": 37, "thick": 2, "height": 25, "counters": [ 
+        9, 9, 9, 9, 9
+    ], "label": "Companies" },
+
+    { "size": 37, "thick": 2, "height": 25, "counters": [ 
+        7, 6, 5, 4, 3, 8, 2
+    ], "label": "Trains" },
+]

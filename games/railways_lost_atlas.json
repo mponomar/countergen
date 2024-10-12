@@ -1,6 +1,5 @@
 [
-    /*
-    { "type": "HexBox", "size": 51, "thick": 2.0, 
+    { "type": "HexBox", "size": 51, "thick": 2.0,
         "counters": 
         [ 
             13, 14, 6, 7, 7, 5, 1, 1, 1
@@ -36,7 +35,6 @@
         "size": 67, "height":44, "thick":0.45, "skipcase": true,
         "counters": [ 7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7,  7  ], "label":"Minors"
     },
-    */
 
     {
         "size": 67, "height":44, "thick":0.45, "skipcase": false,

@@ -1,0 +1,24 @@
+[
+  {
+    // small cards
+    "size": 59, "height": 39, thick: 0.5, "cards": true, "skipcase": true,
+    "counters": [
+      14,   // heroes
+      9,    // terrain
+      32,   // enemy
+      7,    // adv enemy
+    ], "label": ""
+  },
+  {
+    // large cards
+    "size": 77, "height": 56, thick: 0.5, "cards": true, "skipcase": true,
+    "counters": [
+      8,    // actions + orders
+      2,    // mission 1
+      15,   // mission 2a
+      10,   // mission 2b
+      9,    // final mission
+      30,   // event
+    ], "label": ""
+  }
+]

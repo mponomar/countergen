@@ -1,0 +1,48 @@
+[
+  {
+    "size": 20, thick: 2.05,
+    "counters": [
+      7,7,7,7,7,10
+    ], "label": ""
+  },
+  {
+    "size": 26, thick: 2.05,
+    "counters": [
+      10, 5
+    ], "label": ""
+  },
+  {
+    "size": 26,
+    "thick": 2.05,
+    "counters": [
+      40, 28
+    ], "label": ""
+  },
+  {
+    "size": 26,
+    "thick": 2.05,
+    "counters": [
+      50, 30, 20, 10
+    ], "label": ""
+  },
+    {
+    "size": 26,
+    "thick": 2.05,
+    "counters": [
+      40, 20, 20, 20
+    ], "label": ""
+  },
+  {
+    "size": 26,
+    "thick": 2.05,
+    "counters": [ 32 ],
+    "label": ""
+  },
+  {
+    "size": 40,
+    "height": 32,
+    "thick": 2.05,
+    "counters": [ 32 ],
+    "label": ""
+  }
+]
