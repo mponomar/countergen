@@ -1,0 +1,65 @@
+[
+  /*
+  { "size": 32, "thick": 2.6,  "counters": [
+    1,
+    2,
+    3,
+    5,
+    4,
+    1,
+    3,
+    3,
+    8,
+    8,
+    4,
+    3,
+    4,
+    7,
+    18
+  ], "label": "Buildings" },
+
+  { "size": 32, height: 64, "thick": 2.6,  "counters": [
+    1,2,2,2,2,2,8
+  ], "label": "Buildings" },
+
+  { "size": 23, "thick": 2.6,  "counters": [
+    7,1,1,1,1,4,5,5,5,9,9
+  ], "label": "Tokens" },
+  */
+
+  { "size": 17, "thick": 2.6,  "counters": [
+    6,
+    1,
+    1,
+    1,
+    1,
+    3,
+    2,2,2,
+    2,
+    7
+  ], "label": "Tokens" },
+
+  /*
+  { "size": 90, "height": 65, "thick": 0.4,  "counters": [
+    4,
+    13,
+    30,
+    9,
+    14,
+    14,
+    12,
+    4
+  ], "label": "", "cards": true
+  }, */
+  { "size": 121, "height": 71, "thick": 0.4,  "counters": [
+    3,
+    61,
+    31,
+    16,
+    10,
+    32,
+    44,
+    12
+  ], "label": "", "cards": true
+  }
+]

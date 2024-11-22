@@ -42,7 +42,7 @@
     "size": 40,
     "height": 32,
     "thick": 2.05,
-    "counters": [ 32 ],
+    "counters": [ 10 ],
     "label": ""
   }
 ]

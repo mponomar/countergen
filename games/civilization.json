@@ -1,0 +1,60 @@
+[
+  {
+    "size": 21, thick: 2.2,
+    "counters": [
+      31, 31
+    ], "label": ""
+  },
+  {
+    "size": 21, thick: 2.2,
+    "counters": [
+      31, 31
+    ], "label": ""
+  },
+  {
+    "size": 21,
+    "thick": 2.2,
+    "counters": [
+      8, 8, 8, 8, 9, 34
+    ],
+    "label": "Tokens"
+  },
+  {
+    "type": "HexBox",
+    "size": 32,
+    "thick": 2.2,
+    "counters": [
+      8, 4
+    ],
+    "label": ""
+  },
+  {
+    "size": 92,
+    "height": 57,
+    "thick": 0.3,
+    "cards": "true",
+    "counters": [
+      20, 20, 20, 20
+    ],
+    "label": "Cards"
+  },
+    {
+    "size": 66,
+    "height": 43,
+    "thick": 0.3,
+    "cards": "true",
+    "counters": [
+      5, 16, 16, 24
+    ],
+    "label": "Cards"
+  },
+  {
+    "size": 20,
+    "height": 30,
+    "thick": 2.2,
+    "counters": [
+      24
+    ],
+    "label": "World Wonders"
+  }
+]

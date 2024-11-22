@@ -1,0 +1,52 @@
+[
+  { "size": 26,
+    "thick": 2.2,
+    "label": "Soviets",
+    "counters": [
+      [4, "Initial" ],
+      [2, "Commanders" ],
+      [3, "Special" ],
+      [6, "Anti-Tank" ],
+      [3, "AT Weapons" ],
+      [5, "Gunners" ],
+      [3, "MG Weapons" ],
+      [2, "Mortar Team" ],
+      [1, "Mortar Weapons" ],
+      [2, "Forward Observ" ],
+      [1, "4/0" ],
+      [1, "2/0" ],
+      [2, "1/1" ],
+      [6,  "1/0" ],
+    ]
+  },
+  {
+    "size": 26,
+    "thick": 2.2,
+    label: "Germans",
+    "counters" : [
+      [7,  "Machine Gunners" ],
+      [11, "Riflemen"],
+      [7,  "Scouts" ],
+      [3,  "Panzer II" ],
+      [5,  "panzer III" ],
+      [3,  "Stug IIIb"],
+      [3,  "Panzer IV"]
+    ]
+  },
+  {
+    "size": 26,
+    "thick": 2.2,
+    "label": "Trackers",
+    "counters": [
+      [4, "Actions"],
+      [9, "Commands"],
+      [6, "Sappers"],
+      [4, "Ammunition" ],
+      [4, "First Aid" ],
+      [4, "Wire Comms"],
+      [2, "Artillery"],
+      [6, "Food"],
+      [4,  "Anti-Aircraft"]
+    ]
+  }
+]

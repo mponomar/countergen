@@ -39,7 +39,7 @@
 
  */
 
-module HexBox(toksize, tokthick, sections, label, wallthick=1, slack=0.8, tolerance=0.1) {
+module HexBox(toksize, tokthick, sections, label, wallthick=1, slack=0.6, tolerance=0.1) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
 
@@ -103,7 +103,7 @@ module HexBox(toksize, tokthick, sections, label, wallthick=1, slack=0.8, tolera
     }
 }
 
-module CounterBox(toksize, tokthick, sections, label, wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0, fontsize=0, extraheadroom=1, skipcase=0, cards=0) {
+module CounterBox(toksize, tokthick, sections, label, wallthick=1, intwallthick=0, slack=0.6, gap=10,  tolerance=0.1, tokheight=0, fontsize=0, extraheadroom=1, skipcase=0, cards=0) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
     fsize = fontsize ? fontsize : 8;
