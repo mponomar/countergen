@@ -44,7 +44,7 @@ class CounterBox:
             if c != 0:
                 w += 1
             if c != len(self.counters)-1:
-                w += 1 + slack
+                w += slack
         self.total_width = w
         self.label = label
 
@@ -66,7 +66,7 @@ class CounterBox:
             context.move_to(x+mm_to_pt(off), y)
             context.line_to(x+mm_to_pt(off), y+mm_to_pt(self.size+4))
             context.move_to(x+mm_to_pt(off), y)
-            off += 2
+            off += 1
             context.move_to(x+mm_to_pt(off), y)
             context.line_to(x+mm_to_pt(off), y+mm_to_pt(self.size+4))
             context.stroke()
@@ -82,7 +82,7 @@ class CounterBox:
                 off -= (context.text_extents(self.counter_labels[c]).height / 2)
                 context.rotate(radians(90))
             off += ((mm_to_pt(self.thick) * self.counters[c] + mm_to_pt(slack)) / 2)
-            off += mm_to_pt(2)
+            off += mm_to_pt(1)
 
         context.restore()
 
