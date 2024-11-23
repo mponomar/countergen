@@ -48,15 +48,18 @@ class CounterBox:
         self.total_width = w
         self.label = label
 
-    def draw(self, context, options):
-        context.save()
+    def draw(self, context, scale, doLabel=False, fontSize=10):
         x, y = context.get_current_point()
-        context.show_text(self.label)
-        y += context.text_extents(self.label).height + mm_to_pt(1)
+        startx = x
+        starty = y
+        context.set_font_size(fontSize)
+        if (doLabel):
+            context.show_text(self.label)
+            y += context.text_extents(self.label).height + mm_to_pt(1)
         context.move_to(x, y)
         context.line_to(x+mm_to_pt(self.total_width), y)
-        context.line_to(x+mm_to_pt(self.total_width), y+mm_to_pt(self.size+4))
-        context.line_to(x, y+mm_to_pt(self.size+4))
+        context.line_to(x+mm_to_pt(self.total_width), y+mm_to_pt(self.size*scale+4))
+        context.line_to(x, y+mm_to_pt(self.size*scale+4))
         context.line_to(x, y)
         context.stroke()
 
@@ -64,11 +67,11 @@ class CounterBox:
         for c in range(1, len(self.counters)):
             off += self.thick * self.counters[c-1] + slack
             context.move_to(x+mm_to_pt(off), y)
-            context.line_to(x+mm_to_pt(off), y+mm_to_pt(self.size+4))
+            context.line_to(x+mm_to_pt(off), y+mm_to_pt(self.size*scale +4))
             context.move_to(x+mm_to_pt(off), y)
             off += 1
             context.move_to(x+mm_to_pt(off), y)
-            context.line_to(x+mm_to_pt(off), y+mm_to_pt(self.size+4))
+            context.line_to(x+mm_to_pt(off), y+mm_to_pt(self.size*scale +4))
             context.stroke()
 
         off = 0
@@ -76,7 +79,7 @@ class CounterBox:
             off += ((mm_to_pt(self.thick) * self.counters[c] + mm_to_pt(slack)) / 2)
             if self.counter_labels[c] is not None:
                 off += (context.text_extents(self.counter_labels[c]).height / 2)
-                context.move_to(x+off, y + mm_to_pt(self.size+4)/2 + (context.text_extents(self.counter_labels[c]).width / 2))
+                context.move_to(x+off, y + mm_to_pt(self.size*scale +4)/2 + (context.text_extents(self.counter_labels[c]).width / 2))
                 context.rotate(radians(-90))
                 context.show_text(self.counter_labels[c])
                 off -= (context.text_extents(self.counter_labels[c]).height / 2)
@@ -84,7 +87,7 @@ class CounterBox:
             off += ((mm_to_pt(self.thick) * self.counters[c] + mm_to_pt(slack)) / 2)
             off += mm_to_pt(1)
 
-        context.restore()
+        context.move_to(startx, starty)
 
 
 def write_scad(counters, out, options):
@@ -123,8 +126,11 @@ def write_pdf(counters, out, options):
         off = 25.4
         for c in counters:
             ctx.move_to(25.4, mm_to_pt(off))
-            c.draw(ctx, options)
-            off += c.size + 4
+            c.draw(ctx, 1, doLabel=True)
+            off += c.size + mm_to_pt(4)
+            ctx.move_to(25.4, mm_to_pt(off))
+            c.draw(ctx, 0.66, fontSize=7)
+            off += (c.size * 0.66) + mm_to_pt(4)
             if c.label:
                 off += ctx.text_extents(c.label).height + mm_to_pt(1)
             if mm_to_pt(off + c.size + 2) > (DOTS_PER_INCH * 10.5):

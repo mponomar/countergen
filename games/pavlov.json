@@ -28,7 +28,7 @@
       [11, "Riflemen"],
       [7,  "Scouts" ],
       [3,  "Panzer II" ],
-      [5,  "panzer III" ],
+      [5,  "Panzer III" ],
       [3,  "Stug IIIb"],
       [3,  "Panzer IV"]
     ]
@@ -47,6 +47,15 @@
       [2, "Artillery"],
       [6, "Food"],
       [4,  "Anti-Aircraft"]
+    ]
+  },
+  {
+    "size": 26,
+    "thick": 2.2,
+    label: "Indicators",
+    "counters" : [
+      [36,  "Disrupted"],
+      [20,  "Suppressed"]
     ]
   }
 ]
