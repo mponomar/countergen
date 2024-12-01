@@ -10,10 +10,6 @@
      Optional parameters: 
      Specify name=value separated by commas.  They can be listed in any order, 
      and are all optional, with default values.
-         label         Surround by double quotes (can't contain double
-                       quotes).  If present, will emboss the label into the
-                       cover. If not specified or left blank, nothing 
-                       happens.  Honestly a sticker is probably better.
          wallthick     Thickness of outer walls of the box.  Defaults to 1mm.
          intwallthick  Thickness of partitions between counters. If
                        not specified or set to zero, defaults to the same 
@@ -31,7 +27,6 @@
                        up if the fit is too tight and the box doesn't fit.
          tokheight     If specified, makes a rectangular token, with this height.
                        Otherwise you get a toksize x toksize square.
-         fontsize      Font size for label.
 
      ArrangeCounterBox is a convenience module to arrange multiple boxes on
      the same print plate.  Usage is optional. It takes the token size as
@@ -39,7 +34,7 @@
 
  */
 
-module HexBox(toksize, tokthick, sections, label, wallthick=1, slack=0.6, tolerance=0.1) {
+module HexBox(toksize, tokthick, sections, wallthick=1, slack=0.6, tolerance=0.1) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
 
@@ -103,10 +98,9 @@ module HexBox(toksize, tokthick, sections, label, wallthick=1, slack=0.6, tolera
     }
 }
 
-module CounterBox(toksize, tokthick, sections, label, wallthick=1, intwallthick=0, slack=0.6, gap=10,  tolerance=0.1, tokheight=0, fontsize=0, extraheadroom=1, skipcase=0, cards=0) {
+module CounterBox(toksize, tokthick, sections, wallthick=1, intwallthick=0, slack=0.6, gap=10,  tolerance=0.1, tokheight=0, extraheadroom=1, skipcase=0, cards=0) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
-    fsize = fontsize ? fontsize : 8;
     theight = tokheight == 0 ? toksize : tokheight;
     docards = cards == 0 ? false : true;
 
@@ -127,13 +121,6 @@ module CounterBox(toksize, tokthick, sections, label, wallthick=1, intwallthick=
         cube([length, width, partheight]);
         translate([wallthick, wallthick, wallthick]) {
             cube([length-2*wallthick, width-2*wallthick, height]);
-        }
-        translate([length/2, width/2, 0]) {
-            linear_extrude(wallthick/3) {
-                rotate([180, 0, 0]) {
-                    text(label, size=fsize, halign="center", valign="center");
-                }
-            }
         }
     }
 
@@ -167,13 +154,6 @@ module CounterBox(toksize, tokthick, sections, label, wallthick=1, intwallthick=
                     cube([caselen, width+wallthick*2, height+wallthick*2+extraheadroom]);
                     translate([-1, wallthick-tolerance/2, wallthick-tolerance/2]) {
                         cube([caselen, width+tolerance, height+tolerance+extraheadroom]);
-                    }
-                    if (len(label) > 0) {
-                        translate([caselen/2, width/2, height+wallthick+slack+extraheadroom]) {
-                            linear_extrude(slack*2) {
-                                text(label, size=fsize, halign="center", valign="center");
-                            }
-                        }
                     }
                     translate([caselen, (width+wallthick*2+tolerance)/2 , (height+wallthick*2+tolerance)/2]) {
                         cube([wallthick*2+1, width*(2/3), height*(2/3)], center=true);

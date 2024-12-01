@@ -1,0 +1,127 @@
+[
+  {
+    "size": 34,
+    "height": 17,
+    "label": "US Subs A-H",
+    "thick": 2,
+    "counters": [
+      [9, "A"],
+      [31, "B"],
+      [21, "C"],
+      [8, "D"],
+      [3, "E"],
+      [7, "F"],
+      [13, "G"],
+      [13, "H"]
+    ]
+  },
+  {
+    "size": 34,
+    "height": 17,
+    "label": "US Subs I-R, Allied, Enemy, Indicators",
+    "thick": 2,
+    "counters": [
+      [1, "I"],
+      [2, "J"],
+      [3, "K"],
+      [7, "L"],
+      [5, "M"],
+      [3, "N"],
+      [24, "P"],
+      [2, "Q"],
+      [11, "R"],
+      [1, "French"],
+      [11, "British S"],
+      [19, "British T"],
+      [3, "Ultra"],
+      [3, "OpArea"],
+      [1, "Italian"],
+      [2, "German"]
+    ]
+  },
+    {
+    "size": 34,
+    "height": 17,
+    "label": "US Subs S-W, Enemy (Japanese)",
+    "thick": 2,
+    "counters": [
+      [46, "S"],
+      [27, "S-#"],
+      [22, "T"],
+      [2, "W"],
+      [8, "Japanese"]
+    ]
+  },
+  {
+    "size": 17,
+    "thick": 2,
+    "label": "Indicators, Ships",
+    "counters": [
+      [2, "Lost"],
+      [4, "Tons"],
+      [3, "Ships"],
+      [3, "Date"],
+      [2, "War/Torp"],
+      [8, "US ships"],
+      [2, "Dutch ships"],
+      [7, "Pack"],
+      [16, "Skippers"],
+      [24, "TDC"],
+      [24, "RTB"]
+    ]
+  },
+  {
+    "size": 17,
+    "thick": 2,
+    "label": "Damaged, Spotted, Weather",
+    "counters": [
+      [24, "Damaged"],
+      [24, "Spotted"],
+      [4, "Weather"]
+    ]
+  },
+  {
+    "size": 17,
+    "thick": 2,
+    "label": "Targets, No TDC",
+    "counters": [
+      [4, "Combat Event"],
+      [4, "Aircraft"],
+      [2, "CV 15t"],
+      [1, "CV 10t"],
+      [1, "Akagi 41t"],
+      [1, "Kaga"],
+      [1, "Shokaku"],
+      [1, "Hiryu"],
+      [1, "Taiho"],
+      [1, "Shinano"],
+      [3, "BB 32t"],
+      [1, "BB 40t"],
+      [1, "BB 36t"],
+      [1, "BV Ise"],
+      [1, "BB 35t"],
+      [1, "Yamato"],
+      [1, "Asahi"],
+      [1, "Izumo"],
+      [3, "CA 15t"],
+      [2, "CA 13t"],
+      [1, "CS 12t"],
+      [1, "CA 9t"],
+      [6, "CL 5t"],
+      [27, "DD 2t"],
+      [4, "DD 1t"],
+      [4, "DE 1t"],
+      [5, "Diligent DD"],
+      [14, "No TDC"]
+    ]
+  },
+  {
+    "size": 17,
+    "thick": 2,
+    "label": "Merchant/Small Targets",
+    "counters": [
+      [54, "<=5t"],
+      [26, ">=6t"]
+    ]
+  }
+]
