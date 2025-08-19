@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Control",
+    "size": 20,
+    "thick": 1.5,
+    "counters": [
+      [20, "USSR"],
+      [20, "Germany"],
+      [20, "UK"],
+      [20, "Japan"],
+      [20, "US"],
+    ]
+  }
+]

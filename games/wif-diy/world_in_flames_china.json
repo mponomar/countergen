@@ -1,0 +1,67 @@
+[
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "China",
+    "counters": [
+      [1, "Intel"],
+      [1, "Convoys"],
+      [3, "OPs"],
+      [1, "INF"],
+      [4, "MIL"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "China ≤1939",
+    "counters": [
+      [2, "INF HQ"],
+      [7, "INF"],
+      [3, "MIL"],
+      [3, "GAR"],
+      [1, "MTN"],
+      [3, "CAV"],
+      [1, "FTR 2"],
+      [1, "LND 3"],
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "China 40/41",
+    "counters": [
+      [1, "INF HQ"],
+      [1, "MOT"],
+      [1, "GAR"],
+      [1, "INF (1941)"],
+      [1, "MECH (1941)"],
+      [1, "MOT (1941)"],
+      [1, "GAR (1941)"],
+      [1, "FTR 2 (1941)"],
+      [1, "ATR 3 (1941)"],
+    ]
+  },{
+  "size": 16,
+  "thick": 1.4,
+  "height": 18,
+  "label": "China 42/43/44",
+  "counters": [
+    [1, "INF"],
+    [1, "MECH"],
+    [1, "MOT"],
+    [1, "PARA"],
+    [1, "MECH (1943)"],
+    [1, "GAR (1943)"],
+    [1, "MAR (1943)"],
+    [1, "FTR 2 (1943)"],
+    [1, "LND 3 (1943)"],
+    [1, "ARM (1944)"],
+    [1, "INF (1944)"],
+    [1, "LND 4 (1944)"],
+  ]
+}
+]

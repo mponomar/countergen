@@ -1,0 +1,64 @@
+[
+  { "size": 31,
+    "thick": 2,
+    "label": "Fighters",
+    "counters": [
+      [8, "Me-109"],
+      [4, "Me-110"],
+      [4, "Ta-152"],
+      [8, "Fw-190"],
+      [4, "Me-210"],
+      [4, "Me-262"],
+      [4, "Me-410"],
+      [3, "Ju-88"],
+      [3, "Me-163"],
+      [2, "He-162"],
+      [5, "Fw-190 ace"],
+      [7, "Me-109 ace"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Counters",
+    "counters": [
+      [10, "Crew red"],
+      [4, "Crew black"],
+      [3, "Crew blue"],
+      [10, "Crew green"],
+      [4, "FCAB"],
+      [6, "FCA"],
+      [6, "FBOA"],
+      [5, "Bombers"],
+      [1, "Primary Trg"],
+      [5, "Ace"],
+      [5, "Green"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Effects",
+    "counters": [
+      [10, "Light wound"],
+      [8, "Serious wnd"],
+      [5, "Fire"],
+      [9, "Oxygen out"],
+      [10, "KIA"],
+      [10, "Frostbite"],
+      [6, "Fire Ext."],
+      [8, "Heat out"],
+      [11, "Targets"],
+      [5, "Spray fire"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Counters",
+    "counters": [
+      [18, "Squadron 1"],
+      [18, "Squadron 2"]
+    ]
+  }
+]

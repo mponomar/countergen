@@ -1,0 +1,163 @@
+[
+  {
+    "size": 16,
+    "thick": 1.2,
+    "label": "Adm",
+    "counters": [
+      [2, "Spot Rounds"],
+      [2, "OB Stats"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.2,
+    "label": "USSR",
+    "counters": [
+      [8, "Green"],
+      [8, "Line"],
+      [8, "Elite"],
+      [15, "Militia"],
+      [15, "Rifle"],
+      [15, "SMG"],
+      [15, "Guard SMG"],
+      [15, "Guard Rifle"],
+      [6, "Assault"],
+      [6, "Weapon"],
+      [18, "Leaders"],
+      [1, "Hero"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.2,
+    "label": "US",
+    "counters": [
+      [12, "Elite "],
+      [8, "Elite team"],
+      [12, "Line"],
+      [8, "Line team"],
+      [12, "Green 5-4-3"],
+      [8, "Green team"],
+      [6, "Engineer"],
+      [6, "Weapon"],
+      [12, "Paratroop"],
+      [18, "Leader"],
+      [1, "Hero"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.2,
+    "label": "German",
+    "counters": [
+      [10, "Conscript"],
+      [10, "Rifle"],
+      [10, "Elite Rifle"],
+      [10, "SS"],
+      [10, "Parachute"],
+      [10, "Grenadier"],
+      [8, "Green"],
+      [8, "Line"],
+      [8, "Elite"],
+      [6, "Pionier"],
+      [6, "Weapon"],
+      [18, "Leaders"],
+      [1, "Hero"]
+    ]
+  },
+  {
+    "size": 13,
+    "thick": 1.2,
+    "label": "OB",
+    "counters": [
+      [40, "Smoke"],
+      [3, "Trench/A"],
+      [3, "Trench/B"],
+      [3, "Trench/C"],
+      [3, "Trench/D"],
+      [3, "Trench/E"],
+      [3, "Trench/F"],
+      [3, "Veteran/G"],
+      [3, "Veteran/H"],
+      [3, "Trench/J"],
+      [3, "Veteran/R"],
+      [3, "Veteran/S"],
+      [3, "Trench/T"],
+      [3, "Suppr./U"],
+      [3, "Suppr./V"],
+      [3, "Suppr./W"],
+      [3, "Suppr./X"],
+      [3, "Suppr./Y"],
+      [3, "Suppr./Z"]
+    ]
+  },
+  {
+    "size": 13,
+    "thick": 1.2,
+    "label": "Misc",
+    "counters": [
+      [5, "US/GER"],
+      [5, "SOV/GER"],
+      [20, "Wire/Fox"],
+      [20, "Mines/Fox"],
+      [8, "Bnkr/Fox"],
+      [10, "Secret"],
+      [12, "Open"],
+      [1, "Time"],
+      [1, "Year"],
+      [1, "Minefields"],
+      [1, "Pillbox"],
+      [2, "Surrender"],
+      [1, "VP"],
+      [1, "Attack"]
+    ]
+  },
+  {
+    "size": 13,
+    "thick": 1.2,
+    "label": "US Weapons",
+    "counters": [
+      [6, "Satchel"],
+      [2, "Howitzer"],
+      [2, "M Mortar"],
+      [4, "L Mortar"],
+      [5, "Radio"],
+      [2, ".50 cal"],
+      [3, "Flamethr"],
+      [3, "H MG"],
+      [3, "L MG"]
+    ]
+  },
+    {
+    "size": 13,
+    "thick": 1.2,
+    "label": "Soviet Weapons",
+    "counters": [
+      [6, "Satchel"],
+      [2, "Infantry"],
+      [2, "M Mortar"],
+      [3, "L Mortar"],
+      [4, "Radio"],
+      [2, ".50 cal"],
+      [3, "Flamethr"],
+      [7, "L MG"],
+      [2, "H MG"],
+      [2, "M MG"],
+    ]
+  },
+    {
+    "size": 13,
+    "thick": 1.2,
+    "label": "German Weapons",
+    "counters": [
+      [6, "Satchel"],
+      [3, "IG Gun"],
+      [4, "M Mortar"],
+      [4, "L Mortar"],
+      [5, "Radio"],
+      [3, "Flamethr"],
+      [6, "L MG"],
+      [3, "H MG"],
+    ]
+  }
+]

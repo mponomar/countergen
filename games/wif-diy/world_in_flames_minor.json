@@ -1,0 +1,348 @@
+[
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Sweden",
+    "counters": [
+      [2, "RES MIL"],
+      [1, "≤39 INF"],
+      [1, "≤39 GAR"],
+      [1, "≤39 MTN"],
+      [1, "≤39 CA"],
+      [1, "≤39 CL"],
+      [1, "≤39 TRS"],
+      [1, "40 FTR 2"],
+      [1, "40 INFHQ"],
+      [1, "41 INF"],
+      [1, "41 LND 2"],
+      [1, "43 MECH"],
+      [1, "43 FTR 2"],
+      [1, "43 CA"],
+      [1, "43 LND 3"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Czechia",
+    "counters": [
+      [2, "RES MIL"],
+      [3, "≤39 INFHQ"],
+      [3, "≤39 INF"],
+      [1, "≤39 MOT"],
+      [1, "≤39 MECH"],
+      [2, "≤39 GAR"],
+      [2, "≤39 MTN"],
+      [2, "≤39 FTR 2"],
+      [1, "≤39 LND 2"],
+      [1, "40 ARM"],
+      [1, "42 INF"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Spain Nationalist",
+    "counters": [
+      [2, "RES MIL"],
+      [1, "≤39 INFHQ"],
+      [4, "≤39 INF"],
+      [2, "≤39 GAR"],
+      [1, "≤39 CAV"],
+      [1, "≤39 FTR 2"],
+      [1, "≤39 BB"],
+      [1, "≤39 CA"],
+      [1, "≤39 CL"],
+      [1, "≤39 TRS"],
+      [1, "40 MECH"],
+      [1, "42 ARM"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Spain Republic",
+    "counters": [
+      [3, "RES MIL"],
+      [1, "≤39 INFHQ"],
+      [3, "≤39 INF"],
+      [1, "≤39 MOT"],
+      [2, "≤39 GAR"],
+      [1, "≤39 CAV"],
+      [1, "≤39 FTR 2"],
+      [1, "≤39 BB"],
+      [1, "≤39 CA"],
+      [1, "≤39 CL"],
+      [1, "≤39 TRS"],
+      [1, "41 MECH"],
+      [1, "43 ARM"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Turkey",
+    "counters": [
+      [2, "RES MIL"],
+      [1, "≤39 INFHQ"],
+      [3, "≤39 INF"],
+      [1, "≤39 MOT"],
+      [2, "≤39 GAR"],
+      [1, "≤39 TRS"],
+      [1, "≤39 MTN"],
+      [1, "≤39 CAV"],
+      [1, "≤39 FTR 2"],
+      [1, "42 MECH"],
+      [1, "43 LND 3"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Yugoslavia",
+    "counters": [
+      [2, "RES MIL"],
+      [2, "≤39 INFHQ"],
+      [3, "≤39 INF"],
+      [1, "≤39 MTN"],
+      [1, "≤39 CAV"],
+      [1, "≤39 CL"],
+      [1, "40 FTR 2"],
+      [1, "43 MECH"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Poland",
+    "counters": [
+      [2, "RES MIL"],
+      [1, "≤39 INFHQ"],
+      [6, "≤39 INF"],
+      [1, "≤39 CAV"],
+      [1, "≤39 FTR 2"],
+      [1, "≤39 LND 2"],
+      [1, "≤39 CL"],
+      [1, "40 MOT"],
+      [1, "41 MECH"],
+      [1, "43 ARM"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Rumania",
+    "counters": [
+      [2, "RES MIL"],
+      [2, "≤39 INF"],
+      [1, "≤39 GAR"],
+      [1, "≤39 MTN"],
+      [1, "≤39 CAV"],
+      [1, "≤39 LND 2"],
+      [1, "≤39 CL"],
+      [1, "40 INFHQ"],
+      [1, "40 FTR 2"],
+      [1, "41 MOT"],
+      [1, "42 MECH"],
+      [1, "43 ARM"]
+    ]
+  },
+  {"size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Finland",
+    "counters": [
+      [1, "RES MIL"],
+      [1, "≤39 ARMHQ"],
+      [2, "≤39 INF"],
+      [1, "≤39 FTR 2"],
+      [1, "≤39 LND 2"],
+      [1, "≤39 CA"],
+      [1, "41 MECH"]
+    ]
+  },
+  {"size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Brazil",
+    "counters": [
+      [1, "RES MIL"],
+      [1, "≤39 INF"],
+      [1, "≤39 CAV"],
+      [1, "≤39 BB"],
+      [1, "≤39 CL"],
+      [1, "41 MOT"],
+      [1, "43 MECH"],
+      [1, "43 FTR 2"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Hungary",
+    "counters": [
+      [1, "RES MIL"],
+      [2, "≤39 INF"],
+      [1, "≤39 CAV"],
+      [1, "41 FTR 2"],
+      [1, "42 MOT"],
+      [1, "43 MECH"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Netherlands",
+    "counters": [
+      [2, "RES MIL"],
+      [1, "≤39 INF"],
+      [1, "≤39 FTR 2"],
+      [2, "≤39 CA"],
+      [1, "≤39 TRS"],
+      [1, "40 BB"],
+      [1, "41 LND 3"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Norway",
+    "counters": [
+      [1, "RES MIL"],
+      [2, "≤39 INF"],
+      [1, "≤39 FTR 2"],
+      [1, "≤39 CL"],
+      [2, "≤39 TRS"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Belgium",
+    "counters": [
+      [1, "RES MIL"],
+      [2, "≤39 INF"],
+      [1, "≤39 CAV"],
+      [1, "≤39 FTR 2"],
+      [1, "≤39 CL"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Mexico",
+    "counters": [
+      [2, "RES MIL"],
+      [1, "≤39 INF"],
+      [1, "≤39 CAV"],
+      [1, "40 MOT"],
+      [1, "43 MECH"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Bulgaria",
+    "counters": [
+      [1, "RES MIL"],
+      [1, "≤39 INF"],
+      [1, "≤39 GAR"],
+      [1, "≤39 FTR 2"],
+      [1, "40 INF"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Small Countries",
+    "counters": [
+      [1, "AR RES MIL"],
+      [1, "AR ≤39 CAV"],
+      [1, "AR ≤39 BB"],
+      [1, "AR ≤39 CA"],
+      [1, "AR ≤39 CL"],
+      [1, "AR 40 INF"],
+      [2, "SZ RES MIL"],
+      [2, "SZ ≤39 INF"],
+      [1, "SZ 41 INF"],
+      [1, "GR RES MIL"],
+      [2, "GR ≤39 INF"],
+      [1, "GR ≤39 MTN"],
+      [1, "GR ≤39 CA"],
+      [1, "GR 41 MTN"],
+      [1, "ET RES MIL"],
+      [1, "ET ≤39 INFHQ"],
+      [2, "ET ≤39 INF"],
+      [1, "SI RES MIL"],
+      [1, "SI ≤39 INF"],
+      [1, "SI ≤39 CL"],
+      [1, "PT RES MIL"],
+      [1, "PT ≤39 GAR"],
+      [1, "PT ≤39 CL"],
+      [1, "PT 40 INF"],
+      [1, "CH RES MIL"],
+      [1, "CH ≤39 CAV"],
+      [1, "CH ≤39 CL"],
+      [1, "AU RES MIL"],
+      [1, "AU ≤39 MTN"],
+      [1, "AU 40 MOT"],
+      [1, "AF RES MIL"],
+      [1, "AF ≤39 MTN"],
+      [1, "CA RES MIL"],
+      [1, "CA ≤39 INF"],
+      [1, "IR RES MIL"],
+      [1, "IR ≤39 CAV"],
+      [1, "IQ RES MIL"],
+      [1, "IQ ≤39 CAV"],
+      [1, "DE RES MIL"],
+      [1, "IRL RES MIL"],
+      [1, "IRL ≤39 INF"],
+      [1, "PE RES MIL"],
+      [1, "PE ≤39 CL"],
+      [1, "UR RES MIL"],
+      [1, "PAR RES MIL"],
+      [1, "COL RES MIL"],
+      [1, "VEN RES MIL"],
+      [1, "EQ RES MIL"],
+      [1, "BOL RES MIL"],
+      [1, "LI ≤39 INF"],
+      [1, "SAF ≤39 CAV"],
+      [1, "COL ≤39 CAV"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Admin",
+    "counters": [
+      [1, "Year"],
+      [1, "Turn"],
+      [1, "Impulse"],
+      [1, "Initiative"],
+      [8, "Weather"],
+      [6, "CP Used"],
+      [2, "Out of Supply"],
+      [20, "Partisans"],
+      [7, "Factories 1"],
+      [7, "Factories 2"],
+      [8, "Damage"],
+      [35, "Expansions"]
+    ]
+  }
+]

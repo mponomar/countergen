@@ -55,12 +55,12 @@ module HexBox(toksize, tokthick, sections, wallthick=1, slack=0.6, tolerance=0.1
         translate([wallthick, wallthick, r*2+wallthick]) {
             rotate([90, 0, 90]) {
                 linear_extrude(length) {
-                    polygon([[0, 0], 
-                             [0, -s/2], 
-                             [toksize/2+slack, -s/2-r], 
-                             [toksize+slack, -s/2], 
-                             [toksize+slack, 0]
-                             ]);
+                    polygon([[0, 0],
+                            [0, -s/2],
+                            [toksize/2+slack, -s/2-r],
+                            [toksize+slack, -s/2],
+                            [toksize+slack, 0]
+                        ]);
                 }
             }
         }
@@ -77,7 +77,7 @@ module HexBox(toksize, tokthick, sections, wallthick=1, slack=0.6, tolerance=0.1
     }
 
     extraheadroom = 1;
-    gap = 1;
+    gap = 2;
     height = 4*r ;
     width = 2*wallthick + toksize + gap;
 
@@ -98,7 +98,7 @@ module HexBox(toksize, tokthick, sections, wallthick=1, slack=0.6, tolerance=0.1
     }
 }
 
-module CounterBox(toksize, tokthick, sections, wallthick=1, intwallthick=0, slack=0.6, gap=10,  tolerance=0.1, tokheight=0, extraheadroom=1, skipcase=0, cards=0) {
+module CounterBox(toksize, tokthick, sections, wallthick=1, intwallthick=0, slack=0.8, gap=10,  tolerance=0.1, tokheight=0, extraheadroom=1, skipcase=0, cards=0) {
     function sum1(list, i) = i >= 0 ? list[i] + sum1(list, i-1) : 0;
     function sum(list) = sum1(list, len(list)-1);
     theight = tokheight == 0 ? toksize : tokheight;
@@ -117,10 +117,24 @@ module CounterBox(toksize, tokthick, sections, wallthick=1, intwallthick=0, slac
 
 
     // box
-    difference()  {
+    difference() {
+        holew=width*.6;
         cube([length, width, partheight]);
         translate([wallthick, wallthick, wallthick]) {
             cube([length-2*wallthick, width-2*wallthick, height]);
+        }
+        translate([wallthick, wallthick, wallthick]) {
+            for (i=[0:1:len(sections)-2]) {
+                off=sum1(offs, i) - wallthick;
+                holel = offs[i+1] * .5;
+                translate([off, 0, 0]) {
+                    if (offs[i+1] > (height / 2)) {
+                        translate([(offs[i+1])/2 - holel/2 + wallthick/2,width/2 - holew/2 - wallthick,-wallthick*2]) {
+                            cube([holel, holew,wallthick*2+1]);
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -165,8 +179,8 @@ module CounterBox(toksize, tokthick, sections, wallthick=1, intwallthick=0, slac
 }
 
 module ArrangeCounterBox(toksize, wallthick=1) {
-        for (i=[0:$children-1]) {
-            translate([0, i*(toksize+wallthick*4+5), 0]) {
+    for (i=[0:$children-1]) {
+        translate([0, i*(toksize+wallthick*4+5), 0]) {
             children(i);
         }
     }

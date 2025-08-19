@@ -1,0 +1,151 @@
+[
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "UK  Gen/Res",
+    "counters": [
+      [2, "Intel"],
+      [15, "Convoys"],
+      [5, "OPs"],
+      [1, "Gft Dest"],
+      [5, "INF"],
+      [1, "GAR"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "UK ≤1939",
+    "counters": [
+      [1, "ARM HQ"],
+      [1, "INF HQ"],
+      [1, "ARM"],
+      [4, "INF"],
+      [2, "MECH"],
+      [5, "MOT"],
+      [6, "MIL"],
+      [2, "GAR"],
+      [1, "CAV"],
+      [3, "FTR 2"],
+      [1, "LND 2"],
+      [5, "LND 3"],
+      [1, "NAV 2"],
+      [1, "NAV 3"],
+      [1, "ATR 3"],
+      [11, "BB"],
+      [10, "CV"],
+      [11, "CA"],
+      [12, "CL"],
+      [5, "TRS"],
+      [2, "AMPH"],
+      [2, "SUB"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "UK  1940",
+    "counters": [
+      [1, "INF HQ"],
+      [2, "ARM"],
+      [1, "INF"],
+      [1, "MECH"],
+      [1, "MOT"],
+      [1, "PARA"],
+      [1, "FTR 2"],
+      [1, "FTR 3"],
+      [2, "LND 3"],
+      [1, "NAV 3"],
+      [1, "CL"],
+      [1, "TRS"],
+      [1, "SUB"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "UK 1941",
+    "counters": [
+      [1, "ARM HQ"],
+      [1, "INF"],
+      [2, "MECH"],
+      [2, "MOT"],
+      [1, "GAR"],
+      [1, "MAR"],
+      [3, "FTR 2"],
+      [1, "FTR 3"],
+      [1, "LND 2"],
+      [1, "LND 3"],
+      [2, "LND 4"],
+      [1, "NAV 3"],
+      [1, "ATR 3"],
+      [1, "BB"],
+      [1, "SUB"]
+    ]
+  },{
+  "size": 16,
+  "thick": 1.4,
+  "height": 18,
+  "label": "UK 1942",
+  "counters": [
+    [1, "INF HQ"],
+    [1, "ARM"],
+    [1, "INF"],
+    [1, "MECH"],
+    [1, "MOT"],
+    [1, "GAR"],
+    [1, "MTN"],
+    [2, "FTR 2"],
+    [1, "FTR 3"],
+    [2, "LND 4"],
+    [1, "NAV 3"],
+    [1, "NAV 4"],
+    [1, "ATR 3"],
+    [1, "BB"],
+    [1, "CV"],
+    [1, "CA"],
+    [1, "TRS"],
+    [1, "AMPH"],
+    [1, "SUB"]
+  ]
+},{
+  "size": 16,
+  "thick": 1.4,
+  "height": 18,
+  "label": "UK 1943",
+  "counters": [
+    [1, "INF HQ"],
+    [1, "ARM"],
+    [1, "INF"],
+    [1, "MECH"],
+    [1, "MOT"],
+    [1, "PARA"],
+    [4, "FTR 2"],
+    [1, "FTR 3"],
+    [1, "LND 3"],
+    [2, "LND 4"],
+    [1, "NAV 2"],
+    [1, "CV"],
+    [1, "SUB"]
+  ]
+},{
+  "size": 16,
+  "thick": 1.4,
+  "height": 18,
+  "label": "UK 1944/45",
+  "counters": [
+    [1, "INF HQ"],
+    [1, "MECH"],
+    [1, "FTR 2"],
+    [1, "FTR 3"],
+    [1, "LND 4"],
+    [3, "CV"],
+    [1, "45 ARM"],
+    [1, "45 MOT"]
+  ]
+}
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Japanese Naval Forces",
+    "counters": [
+      [3, "CV"],
+      [6, "CVL"],
+      [5, "BB"],
+      [6, "Oilers"],
+      [12, "CA"],
+      [12, "DD"],
+      [3, "BB add."],
+      [1, "CV add."],
+      [5, "CVL add."],
+      [2, "BB (9)"],
+      [4, "CV (9)"],
+      [1, "CVL (9)"],
+      [20, "Force"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Japanese Air Forces",
+    "counters": [
+      [20, "Naval Air 1"],
+      [18, "Naval Air 2"],
+      [12, "Naval Air 5"],
+      [4, "Naval Air 10"],
+      [7, "Land Air 1"],
+      [8, "Land Air 2"],
+      [8, "Land Air 5"],
+      [2, "Land Air 10"],
+      [12, "Air Raid"],
+      [2, "Guam Raid"],
+      [3, "Commit"],
+      [1, "Retire Index"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Indicators",
+    "counters": [
+      [10, "Appr. Sight"],
+      [10, "Located"],
+      [10, "Spotted"],
+      [6, "Butai"],
+      [12, "Fire 1"],
+      [6, "Fire 2"],
+      [4, "Fire 3"],
+      [6, "Hit curr 1"],
+      [5, "Hit curr 2"],
+      [1, "Hit curr 5"],
+      [6, "Hit prev 1"],
+      [5, "Hit prev 2"],
+      [1, "Hit prev 5"],
+      [16, "Search"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "TF 58.1",
+    "counters": [
+      [2, "CV"],
+      [2, "CVL"],
+      [2, "DD div"],
+      [1, "DD scr"],
+      [1, "CA"],
+      [2, "CLAA"],
+      [10, "F6F"],
+      [1, "TBF-3"],
+      [6, "SB2C"],
+      [4, "TBM"],
+      [1, "TBF"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "TF 58.2",
+    "counters": [
+      [2, "CV"],
+      [2, "CVL"],
+      [1, "CA"],
+      [2, "DD desron"],
+      [1, "DD div"],
+      [8, "F6F"],
+      [1, "TBF-3"],
+      [6, "SB2C"],
+      [3, "TBM"],
+      [2, "TBF"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "TF 58.3",
+    "counters": [
+      [2, "CV"],
+      [2, "CVL"],
+      [2, "DD div"],
+      [1, "DD desron"],
+      [1, "CA"],
+      [1, "CLAA"],
+      [10, "F6F"],
+      [1, "F6F-3"],
+      [6, "SBD"],
+      [2, "TBM"],
+      [4, "TBF"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "TF 58.4",
+    "counters": [
+      [1, "CV"],
+      [2, "CVL"],
+      [2, "DD div"],
+      [1, "DD desron"],
+      [1, "CA"],
+      [1, "CLAA"],
+      [7, "F6F"],
+      [1, "F6F-3"],
+      [3, "SB2C"],
+      [1, "TBM"],
+      [1, "TBF"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "TF 58.7",
+    "counters": [
+      [7, "BB"],
+      [3, "DD div"],
+      [1, "CA"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Scenario 9",
+    "counters": [
+      [1, "CV"],
+      [3, "F6F"],
+      [3, "SBD"],
+      [2, "TBF"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Contacts",
+    "counters": [
+      [50, "L1"],
+      [20, "L2"],
+      [20, "L3"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Indicators",
+    "counters": [
+      [8, "Fuel"],
+      [8, "Air Strike"],
+      [8, "Intercept"],
+      [8, "Fuel Crit"],
+      [5, "Sub"],
+      [5, "Sub Pin"],
+      [6, "Inoperable"],
+      [3, "Illum"],
+      [6, "Deck Crash"],
+      [8, "Crippled"],
+      [9, "Hit 1"],
+      [8, "Hit 2"],
+      [6, "Hit 3"],
+      [6, "Hit 4"],
+      [6, "Hit 5"],
+      [4, "Hit 6"],
+      [3, "Hit 10"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "Indicators",
+    "counters": [
+      [6, "US Adv"],
+      [1, "Action"],
+      [1, "Segment"],
+      [1, "Search"],
+      [1, "Wind"],
+      [1, "Turn"],
+      [3, "Leeward"],
+    ]
+  },
+  {
+   "thick": 2,
+    "size": 14.3,
+    "label": "Activation",
+    "counters": [
+      [1, "US Sub"],
+      [1, "US Move"],
+      [1, "Chits"],
+      [3, "J. Island"],
+      [6, "Butai"],
+      [3, "No-OP"],
+      [20, "Forces"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 14.3,
+    "label": "TG",
+    "counters": [
+      [5, "TF"],
+      [3, "Surface"],
+      [1, "TF"],
+      [6, "AA"]
+    ]
+  }
+]

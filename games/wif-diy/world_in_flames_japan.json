@@ -1,0 +1,139 @@
+[
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Japan  Gen/Res",
+    "counters": [
+      [1, "Intel"],
+      [7, "Convoys"],
+      [5, "OPs"],
+      [2, "INF"],
+      [4, "MIL"],
+      [1, "GAR"],
+      [1, "MAR"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Japan ≤1939",
+    "counters": [
+      [3, "INF HQ"],
+      [1, "ARM"],
+      [7, "INF"],
+      [1, "MECH"],
+      [1, "MOT"],
+      [5, "MIL"],
+      [2, "GAR"],
+      [2, "MTN"],
+      [1, "MAR"],
+      [2, "FTR 2"],
+      [2, "LND 2"],
+      [1, "LND 3"],
+      [1, "NAV 2"],
+      [1, "NAV 3"],
+      [1, "NAV 4"],
+      [1, "ATR 3"],
+      [7, "BB"],
+      [9, "CV"],
+      [5, "CA"],
+      [6, "CL"],
+      [3, "TRS"],
+      [2, "AMPH"],
+      [3, "SUB"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Japan 1940",
+    "counters": [
+      [1, "INF"],
+      [1, "MOT"],
+      [1, "GAR"],
+      [3, "FTR 2"],
+      [1, "LND 2"],
+      [1, "NAV 2"],
+      [1, "BB"],
+      [1, "CV"],
+      [1, "CL"],
+      [1, "AMPH"],
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Japan 1941",
+    "counters": [
+      [1, "INF HQ"],
+      [1, "INF"],
+      [1, "MECH"],
+      [1, "PARA"],
+      [2, "FTR 2"],
+      [1, "LND 3"],
+      [1, "NAV 3"],
+      [1, "BB"],
+      [1, "CV"],
+      [1, "CA"],
+      [1, "TRS"],
+      [1, "SUB"]
+    ]
+  },
+  {
+  "size": 16,
+  "thick": 1.4,
+  "height": 18,
+  "label": "Japan 1942",
+  "counters": [
+    [1, "ARM HQ"],
+    [1, "INF"],
+    [1, "GAR"],
+    [1, "MAR"],
+    [1, "FTR 2"],
+    [4, "CV"],
+    [1, "CL"],
+  ]
+},
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Japan 1943",
+    "counters": [
+      [1, "ARM"],
+      [1, "INF"],
+      [1, "MOT"],
+      [1, "GAR"],
+      [3, "FTR 2"],
+      [1, "FTR 3"],
+      [1, "LND 3"],
+      [1, "NAV 2"],
+      [1, "NAV 3"],
+      [3, "CV"],
+      [1, "AMPH"],
+      [1, "SUB"]
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 1.4,
+    "height": 18,
+    "label": "Japan 44/45",
+    "counters": [
+      [2, "INF"],
+      [1, "MECH"],
+      [1, "GAR"],
+      [1, "FTR 2"],
+      [1, "LND 3"],
+      [1, "ARM (1945)"],
+      [1, "INF (1945)"],
+      [1, "FTR 2 (1945)"],
+      [1, "FTR 3 (1945)"],
+      [1, "ATR 4 (1945)"]
+    ]
+  }
+]

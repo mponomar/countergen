@@ -9,7 +9,7 @@ import subprocess
 import math
 
 DOTS_PER_INCH = 72
-slack = 0.6
+slack = 0.8
 
 
 def mm_to_pt(n):
@@ -49,7 +49,7 @@ class CounterBox:
         if self.height == 0:
             self.height = self.size
 
-    def draw_cover_label(self, context, fontSize=16):
+    def draw_cover_label(self, context, fontSize=10):
         if not self.label:
             return
         x, y = context.get_current_point()
@@ -144,7 +144,7 @@ def write_pdf(counters, out, options):
         # wrap to the next page if we're about to overflow
     limit = 10
     if options.landscape:
-        limit = 7.5
+        limit = 8
     with cairo.PDFSurface(out + ".pdf", page_width, page_height) as surface:
         off = mm_to_pt(25.4 / 2)
         ctx = cairo.Context(surface)
@@ -153,13 +153,13 @@ def write_pdf(counters, out, options):
             if off + mm_to_pt(c.size) > mm_to_pt(limit * 25.4):
                 off = mm_to_pt(25.4/2)
                 surface.show_page()
-            ctx.move_to(mm_to_pt(25.4), off)
-            c.draw_cover_label(ctx, fontSize=16)
-            off += mm_to_pt(c.size)
-            if off + mm_to_pt(c.height * 0.66) > mm_to_pt(limit * 25.4):
+            if off + mm_to_pt(c.height * 0.66) + mm_to_pt(c.size) > mm_to_pt(limit * 25.4):
                 off = mm_to_pt(25.4/2)
                 surface.show_page()
-            ctx.move_to(mm_to_pt(25.4), off)
+            ctx.move_to(mm_to_pt(25.4/2), off)
+            c.draw_cover_label(ctx, fontSize=12)
+            off += mm_to_pt(c.size)
+            ctx.move_to(mm_to_pt(25.4/2), off)
             c.draw(ctx, scale=0.66, fontSize=5)
             off += mm_to_pt(c.height * 0.66)
 
@@ -216,7 +216,6 @@ if __name__ == '__main__':
     parser.add_argument('--stl', '-s', action='store_true', default=False, help='generate .stl files')
     parser.add_argument('--landscape', '-l', action='store_true', default=False, help='Generate landscape pdf for labels')
     args = parser.parse_args()
-    print(args)
 
     for file in args.file:
         process_file(file, args)

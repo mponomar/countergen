@@ -1,0 +1,119 @@
+[
+  {
+    "thick":2,
+    "size": 16,
+    "label": "Bands",
+    "counters": [
+      [8, "1"],
+      [5, "2"],
+      [3, "3"]
+    ]
+  },
+   {
+    "thick":2,
+    "size": 16,
+    "label": "Supplies",
+    "counters": [
+      [16, "Horse"],
+      [18, "Bison"],
+      [5, "Food"],
+      [4, "Guns"],
+      [5, "Captives"],
+      [5, "Trade Goods"]
+    ]
+  },
+  {
+    "thick":2,
+    "size": 16,
+    "label": "Mexico",
+    "counters": [
+      [2, "Enemy Space"],
+      [7, "Instructions"],
+      [2, "8"],
+      [2, "6"],
+      [2, "4"],
+      [2, "2"]
+    ]
+  },
+  {
+    "thick":2,
+    "size": 16,
+    "label": "Spain",
+    "counters": [
+      [3, "Enemy Space"],
+      [7, "Instructions"],
+      [3, "8"],
+      [3, "6"],
+      [3, "4"],
+      [3, "2"]
+    ]
+  },
+  {
+    "thick":2,
+    "size": 16,
+    "label": "US",
+    "counters": [
+      [4, "Enemy Space"],
+      [7, "Instructions"],
+      [2, "8"],
+      [2, "6"],
+      [2, "4"],
+      [2, "2"]
+    ]
+  },
+  {
+    "thick":2,
+    "size": 16,
+    "label": "Tribes",
+    "counters": [
+      [1, "Enemy Space"],
+      [6, "Instructions"],
+      [1, "6"],
+      [1, "4"],
+      [1, "2"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 16,
+    "label": "Settlements",
+    "type": "HexBox",
+    "counters": [
+      [5, "Rancheria"],
+      [18, "Tribes"],
+      [8, "Mexico"],
+      [5, "Spain"],
+      [8, "US"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 16,
+    "label": "Status",
+    "counters": [
+      [5, "Status"],
+      [10, "Ravaged"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 16,
+    "label": "Headsmen",
+    "counters": [
+      [3, "A"],
+      [3, "B"],
+      [3, "C"],
+      [3, "D"],
+      [3, "E"]
+    ]
+  },
+  {
+    "thick": 2,
+    "size": 16,
+    "label": "Success",
+    "counters": [
+      [22, "Set 1"],
+      [22, "Set 2"]
+    ]
+  }
+]

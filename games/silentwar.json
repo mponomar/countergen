@@ -2,7 +2,7 @@
   {
     "size": 34,
     "height": 17,
-    "label": "US Subs A-H",
+    "label": "US Subs A-G, Ultra",
     "thick": 2,
     "counters": [
       [9, "A"],
@@ -11,73 +11,84 @@
       [8, "D"],
       [3, "E"],
       [7, "F"],
-      [13, "G"],
-      [13, "H"]
+      [23, "G"],
+      [3, "Ultra"],
     ]
   },
   {
     "size": 34,
     "height": 17,
-    "label": "US Subs I-R, Allied, Enemy, Indicators",
+    "label": "US Subs H-R, French, British",
     "thick": 2,
     "counters": [
+      [13, "H"],
       [1, "I"],
       [2, "J"],
       [3, "K"],
       [7, "L"],
       [5, "M"],
       [3, "N"],
-      [24, "P"],
+      [25, "P"],
       [2, "Q"],
       [11, "R"],
       [1, "French"],
       [11, "British S"],
       [19, "British T"],
-      [3, "Ultra"],
-      [3, "OpArea"],
-      [1, "Italian"],
-      [2, "German"]
     ]
   },
-    {
+  {
     "size": 34,
     "height": 17,
-    "label": "US Subs S-W, Enemy (Japanese)",
+    "label": "US Subs S-W, Japanese, OpArea",
     "thick": 2,
     "counters": [
       [46, "S"],
       [27, "S-#"],
       [22, "T"],
       [2, "W"],
-      [8, "Japanese"]
+      [8, "Japanese"],
+      [3, "OpArea"]
+    ],
+  },
+  {
+    "size": 34,
+    "height": 17,
+    "label": "Dutch, Italian, German",
+    "thick": 2,
+    "counters":  [
+      [17, "Dutch"],
+      [1, "Italian"],
+      [2, "German"],
     ]
   },
   {
     "size": 17,
     "thick": 2,
-    "label": "Indicators, Ships",
+    "label": "Indicators, Ships, Skippers",
     "counters": [
-      [2, "Lost"],
-      [4, "Tons"],
-      [3, "Ships"],
-      [3, "Date"],
-      [2, "War/Torp"],
       [8, "US ships"],
       [2, "Dutch ships"],
       [7, "Pack"],
-      [16, "Skippers"],
-      [24, "TDC"],
-      [24, "RTB"]
+      [22, "US Skippers"],
+      [2, "UK Skippers"],
+      [2, "Dutch Skippers"],
+      [25, "TDC"],
+      [25, "RTB"]
     ]
   },
   {
     "size": 17,
     "thick": 2,
-    "label": "Damaged, Spotted, Weather",
+    "label": "Indicators, Damaged, Spotted",
     "counters": [
-      [24, "Damaged"],
-      [24, "Spotted"],
-      [4, "Weather"]
+      [25, "Damaged"],
+      [25, "Spotted"],
+      [2, "Lost"],
+      [4, "Weather"],
+      [4, "Tons"],
+      [3, "Ships"],
+      [3, "Date"],
+      [2, "War/Torp"]
     ]
   },
   {
@@ -89,39 +100,71 @@
       [4, "Aircraft"],
       [2, "CV 15t"],
       [1, "CV 10t"],
-      [1, "Akagi 41t"],
+      [1, "Akagi"],
       [1, "Kaga"],
       [1, "Shokaku"],
       [1, "Hiryu"],
       [1, "Taiho"],
       [1, "Shinano"],
-      [3, "BB 32t"],
-      [1, "BB 40t"],
-      [1, "BB 36t"],
+      [1, "Musashi"],
       [1, "BV Ise"],
-      [1, "BB 35t"],
       [1, "Yamato"],
       [1, "Asahi"],
       [1, "Izumo"],
+      [3, "BB 32t"],
+      [1, "BB 40t"],
+      [1, "BB 36t"],
+      [1, "BB 35t"],
       [3, "CA 15t"],
       [2, "CA 13t"],
       [1, "CS 12t"],
-      [1, "CA 9t"],
+      [2, "CA 9t"],
       [6, "CL 5t"],
-      [27, "DD 2t"],
       [4, "DD 1t"],
-      [4, "DE 1t"],
-      [5, "Diligent DD"],
+      [5, "DE 1t"],
+      [6, "Diligent DD"],
       [14, "No TDC"]
     ]
   },
   {
     "size": 17,
     "thick": 2,
-    "label": "Merchant/Small Targets",
+    "label": "Merchant/Small Targets/Destroyers",
     "counters": [
-      [54, "<=5t"],
-      [26, ">=6t"]
+      [55, "≤5t"],
+      [25, "≥6t"],
+      [28, "DD 2t"]
+    ]
+  },
+  {
+    "size": 20,
+    "thick": 1,
+    "label": "Moving",
+    "counters": [
+      [5, "Bay of Bengal"] ,
+      [5, "Andaman Sea"] ,
+      [5, "S. China Sea 1"],
+      [5, "S. China Sea 2"],
+      [5, "Java Sea"],
+      [5, "East China Sea"],
+      [5, "Yellow Sea"],
+      [5, "Sea of Japan"],
+      [5, "Empire Pacific"],
+      [5, "N. Philippine Sea"],
+      [5, "S. Philippine Sea"],
+      [5, "Banda Sea"],
+      [5, "Bismarck Sea"],
+      [5, "Coral Sea"],
+      [5, "Solomons"],
+      [5, "Bonins"],
+      [5, "Marianas"],
+      [5, "Carolines"],
+      [5, "Aleutian Islands"],
+      [5, "Kurile Islands"],
+      [5, "North Pacific"],
+      [5, "Hawaiian Islands"],
+      [5, "Marshall Islands"],
+      [5, "Transfer Route"]
     ]
   }
 ]
