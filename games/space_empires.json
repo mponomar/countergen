@@ -1,0 +1,25 @@
+[
+  {
+    "size": 19,
+    "thick": 2,
+    "counters": [
+        [5, "Scout"],
+        [4, "Destroyer"],
+        [4, "Battleship"],
+        [4, "Cruiser"],
+        [4, "Battlecruiser"],
+        [2, "Dreadnaught"],
+        [2, "Base"],
+        [4, "Shipyard"],
+        [4, "Raider"],
+        [4, "Carrier"],
+        [5, "Mines"],
+        [3, "Minesweeper"],
+        [8, "Fighter"],
+        [2, "Decoy"],
+        [12, "Colony Ship"],
+        [20, "MS Pipeline"],
+        [1, "Homeworld"],
+    ]
+  }
+]
