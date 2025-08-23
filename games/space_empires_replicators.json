@@ -1,0 +1,55 @@
+[
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Home"
+    "counters": [
+       [7, "DYO"],
+       [3, "Fleet"],
+       [2, "Cap. Alien"],
+       [28, "Terrain"],
+       [1, "Home"],
+       [1, "Doomsday"],
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Ships"
+    "counters": [
+       [15, "0"],
+       [15, "II"],
+       [15, "IV"],
+       [8, "V"],
+       [8, "VII"],
+       [8, "XI"],
+       [6, "XIII"],
+       [6, "XV"],
+       [12, "PD"],
+       [7, "SW"],
+       [5, "Exp"],
+       [6, "Scan"],
+       [1, "C-64"],
+       [15, "IX"],
+    ]
+  },
+  {
+    "label": "Crews"
+    "size": 16,
+    "thick": 2,
+    "counters": {
+        [3, "Agent Smith"],
+        [3, "Alexa"],
+        [3, "Ash"],
+        [3, "Data"],
+        [3, "Hal 10k"],
+        [3, "Hive Queen"],
+        [3, "Mycroft"],
+        [3, "ROMmie"],
+        [3, "Quorra"],
+        [3, "Sonny"],
+        [3, "Skynet"],
+        [3, "WOPR"],
+    }
+  }
+]

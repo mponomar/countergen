@@ -1,0 +1,76 @@
+[
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Fleet",
+    "counters": [
+        [6, "Scout"],
+        [1, "Scout-X"],
+        [6, "Destroyer"],
+        [6, "Cruiser"],
+        [6, "Battleship"],
+        [6, "B. Cruiser"],
+        [5, "Dreadnaught"],
+        [4, "Base"],
+        [6, "Raider"],
+        [6, "Carrier"],
+        [6, "B. Carrier"],
+        [10, "Fighter"],
+        [6, "Mine Sw."],
+        [9, "Mines"],
+        [5, "Titan"],
+        [6, "Boarder"],
+        [2, "Flagship"],
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Home & Misc",
+    "counters": [
+        [2, "Spare Miner"],
+        [1, "Spare Empty"],
+        [2, "Spare Fleet"],
+        [7, "Spare DYO"],
+        [25, "System"],
+        [8, "V. Setup"],
+        [3, "Homeworld"],
+        [4, "Status"],
+        [5, "Logistic"],
+        [10, "Log/Temp"],
+        [2, "Starbase"],
+        [4, "Def net"],
+
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Non-Military",
+    "counters": [
+        [4, "Decoy"],
+        [4, "Miner"],
+        [4, "Miner-X"],
+        [7, "Shipyard"],
+        [16, "Colony Ship"],
+        [28, "MS Pipeline"],
+        [16, "Research"],
+        [6, "Unique"],
+        [3, "Fleet"],
+        [4, "Cap. Alien"],
+    ]
+  },
+  {
+    "size": 16,
+    "thick": 2,
+    "label": "Ground",
+    "counters": [
+        [6, "Transport"],
+        [10, "Infantry"],
+        [10, "H. Infantry"],
+        [8, "Marines"],
+        [6, "Grav Armor"],
+        [3, "Cyber Armor"],
+    ]
+  }
+]
