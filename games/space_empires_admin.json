@@ -102,8 +102,9 @@
       [1, "Key Planet"],
       [1, "Morale"],
       [6, "Mission"],
+      [5, "Jedun"],
       [8, "Card/Mission"],
+      [3, "Charged"],
     ]
   }
-
 ]
